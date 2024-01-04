@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <CENTER>
+        <h1>CALCULATOR</h1></CENTER>
+        <div class="container">
+            <div class="calculator">
+                <form>
+                    <div class="display">
+                        <input type="text"  id="display">
+                    </div>
+                    <div>
+                        <input type="button" value="AC"  onclick="clea()" class="operator">
+                        <input type="button" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                        <input type="button" value="." onclick="getValue('.')" class="operator">
+                        <input type="button" value="/" onclick="getValue('/')" class="operator">
+
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="getValue('7')" >
+                        <input type="button" value="8" onclick="getValue('8')" >
+                        <input type="button" value="9" onclick="getValue('9')" >
+                        <input type="button" value="*" onclick="getValue('*')" class="operator">
+                        
+
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="getValue('4')" >
+                        <input type="button" value="5" onclick="getValue('5')" >
+                        <input type="button" value="6" onclick="getValue('6')" >
+                        <input type="button" value="-" onclick="getValue('-')" class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="getValue('1')" >
+                        <input type="button" value="2" onclick="getValue('2')" >
+                        <input type="button" value="3" onclick="getValue('3')" >
+                        <input type="button" value="+" onclick="getValue('+')" class="operator">
+                    </div>
+                    <div>
+                       <input type="button" value="0" onclick="getValue('0')" >
+                       <input type="button" value="=" onclick="calculateResult()" class="equal operator">
+                     </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <center><h1>Task 1</h1></center>
+        <script src="script3.js"></script>
+    </body>
+</html>
